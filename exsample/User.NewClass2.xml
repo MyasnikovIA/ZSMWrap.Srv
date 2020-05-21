@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2018.1 (Build 184U)" ts="2020-05-21 18:52:12">
+<Class name="User.NewClass2">
+<Super>%Persistent</Super>
+<TimeChanged>65503,86227.504437</TimeChanged>
+<TimeCreated>65503,82020.485803</TimeCreated>
+
+<Property name="p1">
+<Type>%String</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Library.CacheStorage</Type>
+<DataLocation>^User.NewClass2D</DataLocation>
+<DefaultData>NewClass2DefaultData</DefaultData>
+<IdLocation>^User.NewClass2D</IdLocation>
+<IndexLocation>^User.NewClass2I</IndexLocation>
+<StreamLocation>^User.NewClass2S</StreamLocation>
+<Data name="NewClass2DefaultData">
+<Value name="1">
+<Value>%%CLASSNAME</Value>
+</Value>
+<Value name="2">
+<Value>p1</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+</Export>

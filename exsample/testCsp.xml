@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2018.1 (Build 184U)" ts="2020-05-21 18:51:52">
+<CSP name="test2.csp" application="/csp/user/" default="1"><![CDATA[
+<html>
+<head>
+<title>	Cache Server Page </title>
+</head>
+<body>
+<pre>
+ <server>
+  w !,$h
+  w !,$job
+  zw %request
+</server>
+</pre>	
+<h1>sdfgsdfgsdfgsdf</h1>
+ <script language="JavaScript">
+    var AsincXMLHttpRequest =SendServer("User.NewClass1.testCall","test",'222222',function(dat){  console.log('asinc',dat); });
+    console.log('AsincXMLHttpRequest:',AsincXMLHttpRequest);
+    
+    var a2=QueryServer("User.NewClass1.NewQuery1","1");
+    console.log(a2);
+    var a3=SqlServer("select * from NewClass2");
+    console.log(a3);
+</script>
+
+</body>
+</html>
+]]></CSP>
+</Export>

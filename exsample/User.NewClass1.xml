@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2018.1 (Build 184U)" ts="2020-05-21 18:53:09">
+<Class name="User.NewClass1">
+<Description>
+Запустить
+http://127.0.0.1:6010/csp/user/User.NewClass1.cls</Description>
+<Super>%CSP.Page</Super>
+<TimeChanged>65520,67984.082305</TimeChanged>
+<TimeCreated>65498,83851.967975</TimeCreated>
+
+<Method name="testCall">
+<Description>
+User.NewClass1.testCall()</Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>arg="all",t1=111</FormalSpec>
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[
+	w "||==="_$zdt($h)_"==="_arg_"==="_$job_"==="_t1_"||"
+	q $zdt($h)
+]]></Implementation>
+</Method>
+
+<Method name="OnPage">
+<ClassMethod>1</ClassMethod>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	&html<<h1>1111111111111111111fassadf</h1>>
+	w "<pre>"
+	zw %request
+	w %request.%data("AAAAAAAAAAAAAAAAAA")
+	w "</pre>"
+	Quit $$$OK
+]]></Implementation>
+</Method>
+
+<Query name="NewQuery1">
+<Description>
+ User.NewClass1.NewQuery1</Description>
+<Type>%SQLQuery</Type>
+<FormalSpec>Param1:%String</FormalSpec>
+<SqlQuery>	select * from NewClass2 
+	where ID=:Param1</SqlQuery>
+</Query>
+</Class>
+</Export>

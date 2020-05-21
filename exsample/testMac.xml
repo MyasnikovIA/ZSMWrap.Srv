@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2018.1 (Build 184U)" ts="2020-05-21 18:51:49">
+<Routine name="test" type="MAC" languagemode="0" timestamp="65520,67895.050983"><![CDATA[
+   // Запуск
+   // http://127.0.0.1:6010/csp/user/test.mac
+   w $h,"<br>",!
+   w $job,"<br>",!   
+   zw %ProcessID
+   
+   w "<pre>"
+   zw %request
+    
+     w !,$zu(5),!
+    s ClassName=$System.CSP.GetClassName("/User.NewClass1.cls")  
+    zw ClassName
+   w "</pre>"
+   q
+   
+OnPreHTTP()   
+   s %request.%data("Content-Type") ="text/plain"  
+   q
+]]></Routine>
+</Export>
